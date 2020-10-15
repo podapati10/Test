@@ -9,3 +9,9 @@ function runPyScript(input)
 
     return jqXHR.responseText;
 }
+
+$('#submitbutton').click(function(){
+    datatosend = 'Hello there, I am from JavaScript';
+    result = runPyScript(datatosend);
+    window.alert( result);
+});
